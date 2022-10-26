@@ -25,11 +25,7 @@ const Home: NextPage = () => {
         <title>Antoine Abhay</title>
         <meta name="description" content="Antoine' website" />
         <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="icon"
-          type="image/svg+xml"
-          href="/favicon.svg"
-        />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="icon" type="image/png" href="/favicon.png" />
       </Head>
 
@@ -45,12 +41,12 @@ const Home: NextPage = () => {
               layout="fill"
             />
           </div>
-          <div className="font-header pl-20 pt-[calc(45vh-72px)] text-7xl font-medium leading-tight text-white">
+          <div className="font-header pl-[5vw] pt-[calc(45vh-72px)] text-7xl font-medium leading-tight text-gray-50">
             <div>Hey,</div>
             <div>I&apos;m Antoine</div>
           </div>
         </div>
-        <div className="min-h-screen w-screen">
+        <div className="min-h-screen w-screen bg-gray-50">
           <div className="flex flex-col items-center">
             <div className="font-header mt-24 text-5xl font-medium leading-relaxed">
               Who I am
@@ -58,7 +54,7 @@ const Home: NextPage = () => {
             <div className="h-1 w-20 bg-red-600" />
             <div
               ref={profileRef}
-              className="flex w-full flex-col items-center md:mt-24 md:flex-row md:justify-around"
+              className="flex w-full flex-col items-center md:mt-24 md:flex-row md:justify-around max-w-6xl"
             >
               <ProfileItem
                 imageSrc="/images/dev.inline.svg"
