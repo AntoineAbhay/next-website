@@ -30,8 +30,8 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <div className="h-screen w-screen">
-          <div className="absolute z-[-1] h-full w-full bg-black">
+        <div>
+          <div className="absolute z-[-1] h-screen w-screen bg-black">
             <Image
               src={shuttleImg}
               alt="A shuttle launch"
