@@ -31,7 +31,7 @@ const Home: NextPage = () => {
 
       <main>
         <div className="h-screen w-screen">
-          <div className="absolute z-[-1] h-full w-full overflow-hidden">
+          <div className="absolute z-[-1] h-full w-full bg-black">
             <Image
               src={shuttleImg}
               alt="A shuttle launch"
@@ -41,12 +41,12 @@ const Home: NextPage = () => {
               layout="fill"
             />
           </div>
-          <div className="h-screen flex flex-col justify-center font-header pl-[5vw] text-7xl font-medium leading-tight text-gray-50">
+          <div className="h-screen flex flex-col justify-center font-header pl-[5vw] text-7xl font-medium leading-tight text-white bg-opacity-30 bg-black">
             <div className="mt-8">Hey,</div>
             <div>I&apos;m Antoine</div>
           </div>
         </div>
-        <div className="flex min-h-screen w-screen flex-col items-center justify-center bg-gray-50">
+        <div className="flex min-h-screen w-screen flex-col items-center justify-center">
           <div className="font-header text-5xl font-medium leading-relaxed">
             Who I am
           </div>
