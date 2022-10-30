@@ -13,6 +13,45 @@ function defineNextConfig(config) {
   return config;
 }
 
+const ContentSecurityPolicy = `
+  default-src 'self';
+  script-src 'self' ${env.NODE_ENV === "production" ? "" : "'unsafe-eval'"};
+  style-src 'self' 'unsafe-inline' fonts.googleapis.com;
+  font-src fonts.gstatic.com;
+  img-src 'self' ${env.NODE_ENV === "production" ? "" : "* data:"};
+`
+
+const securityHeaders = [
+  {
+    key: 'Strict-Transport-Security',
+    value: 'max-age=63072000; includeSubDomains; preload'
+  },
+  {
+    key: 'X-XSS-Protection',
+    value: '1; mode=block'
+  },
+  {
+    key: 'X-Frame-Options',
+    value: 'SAMEORIGIN'
+  },
+  {
+    key: 'Permissions-Policy',
+    value: 'camera=(), microphone=(), geolocation=(), accelerometer=()'
+  },
+  {
+    key: 'X-Content-Type-Options',
+    value: 'nosniff'
+  },
+  {
+    key: 'Referrer-Policy',
+    value: 'same-origin'
+  },
+  {
+    key: 'Content-Security-Policy',
+    value: ContentSecurityPolicy.replace(/\s{2,}/g, ' ').trim()
+  }
+]
+
 export default defineNextConfig({
   reactStrictMode: true,
   swcMinify: true,
@@ -24,5 +63,14 @@ export default defineNextConfig({
   i18n: {
     locales: ["en"],
     defaultLocale: "en",
+  },
+  async headers() {
+    return [
+      {
+        // Apply these headers to all routes in your application.
+        source: '/:path*',
+        headers: securityHeaders,
+      },
+    ]
   },
 });
