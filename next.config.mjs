@@ -18,7 +18,7 @@ const ContentSecurityPolicy = `
   script-src 'self' ${env.NODE_ENV === "production" ? "" : "'unsafe-eval'"};
   style-src 'self' 'unsafe-inline' fonts.googleapis.com;
   font-src fonts.gstatic.com;
-  img-src 'self' ${env.NODE_ENV === "production" ? "" : "* data:"};
+  img-src 'self' data:;
 `
 
 const securityHeaders = [
