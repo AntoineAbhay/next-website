@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { useLayoutEffect, useRef } from "react";
@@ -22,14 +21,6 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <Head>
-        <title>Antoine Abhay</title>
-        <meta name="description" content="Antoine' website" />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="icon" type="image/png" href="/favicon.png" />
-      </Head>
-
       <main>
         <div>
           <div className="absolute z-[-1] h-screen w-screen bg-black">
