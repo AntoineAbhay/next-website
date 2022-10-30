@@ -39,7 +39,7 @@ const Home: NextPage = () => {
           </div>
         </div>
         <div className="flex min-h-screen w-screen flex-col items-center justify-center">
-          <div className="text-5xl font-semibold leading-relaxed">
+          <div className="mt-4 text-5xl font-semibold leading-relaxed">
             Who I am
           </div>
           <div className="h-1 w-20 bg-red-600" />
@@ -66,7 +66,7 @@ const Home: NextPage = () => {
               description="Riding in Paris"
             />
           </div>
-          <Link href='/aboutme'><a className='px-4 py-2 bg-indigo-600 text-white rounded'>Learn more</a></Link>
+          <Link href='/aboutme'><a className='mb-4 px-4 py-2 bg-indigo-600 text-white rounded'>Learn more</a></Link>
         </div>
       </main>
     </>
