@@ -7,7 +7,7 @@ const RepositoryCard = ({ repository }: { repository: Repository }) => {
   return (
     <div className="m-4 p-4 border border-indigo-900 border-opacity-20 rounded">
       <a
-        className="text-xl capitalize font-header font-semibold"
+        className="text-xl capitalize font-semibold"
         href={html_url}
         target="_blank"
         rel="noopener noreferrer"
