@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { useLayoutEffect, useRef } from "react";
 import shuttleImg from "../../public/images/shuttle_launch.jpg";
 
@@ -74,6 +75,7 @@ const Home: NextPage = () => {
               description="Riding in Paris"
             />
           </div>
+          <Link href='/aboutme'><a className='px-4 py-2 bg-indigo-600 text-white rounded'>Learn more</a></Link>
         </div>
       </main>
     </>
