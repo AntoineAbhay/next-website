@@ -18,7 +18,7 @@ const AboutMe: NextPage<{ repositories: Repository[] }> = ({
   return (
     <div className="flex flex-col items-center">
       <section>
-        <h2 className="font-header text-3xl">Github</h2>
+        <h2 className="font-header text-3xl font-bold">Github</h2>
         <div className="grid max-w-3xl sm:grid-cols-2">
           {repositories.map((repository, index) => (
             <RepositoryCard key={index} repository={repository} />
