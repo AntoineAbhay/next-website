@@ -70,7 +70,7 @@ const Home: NextPage = () => {
         </div>
       </main>
     </>
-  );
+  )
 };
 
 interface ProfileItemProps {
