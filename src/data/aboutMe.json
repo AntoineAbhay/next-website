@@ -2,7 +2,7 @@
   "experiences": [
     {
       "title": "Fullstack - Hiresweet",
-      "location": "Paris Region, France",
+      "location": "Paris, France",
       "start": "April 2019",
       "end": "Today",
       "companyLink": "https://hiresweet.com/",
@@ -68,7 +68,7 @@
     },
     {
       "title": "Fullstack - Homerez (internship)",
-      "location": "Paris Region, France",
+      "location": "Paris, France",
       "start": "September 2017",
       "end": "February 2018",
       "companyLink": "https://www.homerez.fr/",
@@ -93,7 +93,7 @@
   "education": [
     {
       "title": "École Centrale de Lyon",
-      "location": "Région de Lyon, France",
+      "location": "Lyon, France",
       "start": "2015",
       "end": "2019",
       "companyLink": "https://www.ec-lyon.fr/",
