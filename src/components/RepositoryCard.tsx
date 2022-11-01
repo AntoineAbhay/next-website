@@ -5,7 +5,7 @@ import Chip from "./Chip";
 const RepositoryCard = ({ repository }: { repository: Repository }) => {
   const { name, html_url, description, languages, topics } = repository;
   return (
-    <div className="m-4 p-4 border border-indigo-900 border-opacity-20 rounded">
+    <div className="p-4 border border-indigo-900 border-opacity-20 rounded-md">
       <a
         className="text-xl capitalize font-semibold"
         href={html_url}
