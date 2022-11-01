@@ -5,17 +5,17 @@ const ExperienceCard = ({ experience }: { experience: Experience }) => {
   const { title, excerpt, companyLink, skills, location, start, end } =
     experience;
   return (
-    <div className="rounded-md border border-indigo-900 border-opacity-20 p-4">
+    <div className="rounded-md border border-indigo-900 border-opacity-20 p-4 dark:bg-slate-800 dark:border-slate-400">
       <a
-        className="text-xl font-semibold capitalize"
+        className="text-xl font-semibold capitalize dark:text-slate-200"
         href={companyLink}
         target="_blank"
         rel="noopener noreferrer"
       >
         <h3>{title}</h3>
       </a>
-      <div className="text-sm text-gray-500">{location}</div>
-      <div className="text-sm text-gray-500">
+      <div className="text-sm text-gray-500 dark:text-slate-200">{location}</div>
+      <div className="text-sm text-gray-500 dark:text-slate-200">
         {start} - {end}
       </div>
       <div className="py-2">

@@ -21,7 +21,7 @@ const Home: NextPage = () => {
 
   return (
     <>
-      <main>
+      <main className="dark:text-slate-200">
         <div>
           <div className="absolute z-[-1] h-screen w-screen bg-black">
             <Image
@@ -33,7 +33,7 @@ const Home: NextPage = () => {
               layout="fill"
             />
           </div>
-          <div className="h-screen flex flex-col justify-center pl-[5vw] text-7xl font-semibold leading-tight text-white bg-opacity-30 bg-black">
+          <div className="h-screen flex flex-col justify-center pl-[5vw] text-7xl font-semibold leading-tight text-white dark:text-slate-200 bg-opacity-30 bg-black">
             <div className="mt-8">Hey,</div>
             <div>I&apos;m Antoine</div>
           </div>
@@ -66,7 +66,7 @@ const Home: NextPage = () => {
               description="Riding in Paris"
             />
           </div>
-          <Link href='/aboutme'><a className='mb-4 px-4 py-2 bg-indigo-600 text-white rounded'>Learn more</a></Link>
+          <Link href='/aboutme'><a className='mb-4 px-4 py-2 bg-indigo-600 text-white dark:text-slate-200 rounded'>Learn more</a></Link>
         </div>
       </main>
     </>
