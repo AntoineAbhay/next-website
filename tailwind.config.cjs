@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         "sans": ["Trispace", ...defaultTheme.fontFamily.sans],
+        "serif": ["Bitter", ...defaultTheme.fontFamily.serif],
       },
     },
   },
