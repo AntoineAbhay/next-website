@@ -14,7 +14,8 @@ const Home: NextPage = () => {
           entry.target.classList.toggle("show", entry.isIntersecting);
         });
       },
-      { threshold: [0.95] } // Half of the element is visible
+      { rootMargin: '100% 100% 0px', // No intersection taken into account on top and sides
+      threshold: [0.5] } // Half of the element is visible
     );
     const profileItems = [...(profileRef.current?.children || [])];
     profileItems.forEach((profileItem) => {
@@ -98,8 +99,7 @@ const ProfileItem = ({
       <style jsx>{`
         .item {
           opacity: 0;
-
-          transform: translateX(-4vw);
+          transform: translateX(-50%);
           transition: opacity 2s cubic-bezier(0.16, 1, 0.3, 1),
             transform 2s cubic-bezier(0.16, 1, 0.3, 1);
         }
