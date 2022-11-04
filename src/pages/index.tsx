@@ -8,11 +8,14 @@ const Home: NextPage = () => {
   const profileRef = useRef<HTMLDivElement>(null);
 
   useLayoutEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        entry.target.classList.toggle("show", entry.isIntersecting);
-      });
-    });
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          entry.target.classList.toggle("show", entry.isIntersecting);
+        });
+      },
+      { threshold: [0.95] } // Half of the element is visible
+    );
     const profileItems = [...(profileRef.current?.children || [])];
     profileItems.forEach((profileItem) => {
       observer.observe(profileItem);
@@ -33,7 +36,7 @@ const Home: NextPage = () => {
               layout="fill"
             />
           </div>
-          <div className="h-screen flex flex-col justify-center pl-[5vw] text-7xl font-semibold leading-tight text-white dark:text-slate-200 bg-opacity-30 bg-black">
+          <div className="flex h-screen flex-col justify-center bg-black bg-opacity-30 pl-[5vw] text-7xl font-semibold leading-tight text-white dark:text-slate-200">
             <div className="mt-8">Hey,</div>
             <div>I&apos;m Antoine</div>
           </div>
@@ -66,11 +69,15 @@ const Home: NextPage = () => {
               description="Riding in Paris"
             />
           </div>
-          <Link href='/aboutme'><a className='mb-4 px-4 py-2 bg-indigo-600 text-white dark:text-slate-200 rounded'>Learn more</a></Link>
+          <Link href="/aboutme">
+            <a className="mb-4 rounded bg-indigo-600 px-4 py-2 text-white dark:text-slate-200">
+              Learn more
+            </a>
+          </Link>
         </div>
       </main>
     </>
-  )
+  );
 };
 
 interface ProfileItemProps {
@@ -91,13 +98,14 @@ const ProfileItem = ({
       <style jsx>{`
         .item {
           opacity: 0;
-          filter: blur(5px);
-          transform: translateX(-100%);
-          transition: all 1s;
+
+          transform: translateX(-4vw);
+          transition: opacity 2s cubic-bezier(0.16, 1, 0.3, 1),
+            transform 2s cubic-bezier(0.16, 1, 0.3, 1);
         }
+
         .show {
           opacity: 1;
-          filter: blur(0);
           transform: translateX(0);
         }
       `}</style>
