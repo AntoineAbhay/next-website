@@ -33,9 +33,11 @@ const Home: NextPage = () => {
               alt="A shuttle launch"
               placeholder="blur"
               quality={100}
-              objectFit="cover"
-              layout="fill"
-            />
+              fill
+              sizes="100vw"
+              style={{
+                objectFit: "cover"
+              }} />
           </div>
           <div className="flex h-screen flex-col justify-center bg-black bg-opacity-30 pl-[5vw] text-7xl font-semibold leading-tight text-white dark:text-slate-200">
             <div className="mt-8">Hey,</div>
@@ -70,10 +72,8 @@ const Home: NextPage = () => {
               description="Riding in Paris"
             />
           </div>
-          <Link href="/aboutme">
-            <a className="mb-4 rounded bg-indigo-600 px-4 py-2 text-white dark:text-slate-200">
-              Learn more
-            </a>
+          <Link href="/aboutme" className="mb-4 rounded bg-indigo-600 px-4 py-2 text-white dark:text-slate-200">
+            Learn more
           </Link>
         </div>
       </main>
@@ -110,7 +110,16 @@ const ProfileItem = ({
         }
       `}</style>
       <div className="item mb-12 text-center md:w-2/6">
-        <Image src={imageSrc} alt={alt} height={140} width={113} />
+        <Image
+          src={imageSrc}
+          alt={alt}
+          height={140}
+          width={113}
+          style={{
+            display: 'inline-block',
+            maxWidth: "113px",
+            height: "140px"
+          }} />
         <div className="text-2xl">{title}</div>
         <div className="text-base">{description}</div>
       </div>
