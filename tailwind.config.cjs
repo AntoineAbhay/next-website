@@ -8,8 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        "sans": ["Trispace", ...defaultTheme.fontFamily.sans],
-        "serif": ["Bitter", ...defaultTheme.fontFamily.serif],
+        "heading": ["Space Grotesk", ...defaultTheme.fontFamily.sans],
+        "sans": ["Manrope", ...defaultTheme.fontFamily.sans],
       },
     },
   },

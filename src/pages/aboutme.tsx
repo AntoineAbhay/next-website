@@ -23,7 +23,7 @@ const AboutMe: NextPage<{
   return (
     <div className="flex flex-col max-w-3xl lg:max-w-5xl m-[auto]">
       <section className="m-8">
-        <h2 className="text-3xl font-bold mb-8 dark:text-slate-200">My projects on Github</h2>
+        <h2 className="text-4xl font-bold mb-8 dark:text-slate-200">My projects on Github</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {repositories.map((repository, index) => (
             <RepositoryCard key={index} repository={repository} />
@@ -31,7 +31,7 @@ const AboutMe: NextPage<{
         </div>
       </section>
       <section className="m-8">
-        <h2 className="text-3xl font-bold mb-8 dark:text-slate-200">My professional experiences</h2>
+        <h2 className="text-4xl font-bold mb-8 dark:text-slate-200">My professional experiences</h2>
         <div className="flex flex-col gap-8">
           {experiences.map((experience, index) => (
             <ExperienceCard key={index} experience={experience} />
@@ -39,7 +39,7 @@ const AboutMe: NextPage<{
         </div>
       </section>
       <section className="m-8">
-        <h2 className="text-3xl font-bold mb-8 dark:text-slate-200">My education</h2>
+        <h2 className="text-4xl font-bold mb-8 dark:text-slate-200">My education</h2>
         <div className="flex flex-col gap-8">
           {education.map((educationItem, index) => (
             <ExperienceCard key={index} experience={educationItem} />

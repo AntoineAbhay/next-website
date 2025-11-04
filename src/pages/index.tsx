@@ -39,13 +39,13 @@ const Home: NextPage = () => {
                 objectFit: "cover"
               }} />
           </div>
-          <div className="flex h-screen flex-col justify-center bg-black bg-opacity-30 pl-[5vw] text-7xl font-semibold leading-tight text-white dark:text-slate-200">
+          <div className="flex h-screen flex-col justify-center bg-black bg-opacity-30 pl-[5vw] text-8xl font-semibold leading-tight text-white dark:text-slate-200">
             <div className="mt-8">Hey,</div>
             <div>I&apos;m Antoine</div>
           </div>
         </div>
         <div className="flex min-h-screen w-screen flex-col items-center justify-center">
-          <div className="mt-4 text-5xl font-semibold leading-relaxed">
+          <div className="mt-4 text-6xl font-semibold leading-relaxed">
             Who I am
           </div>
           <div className="h-1 w-20 bg-red-600" />
@@ -120,8 +120,8 @@ const ProfileItem = ({
             maxWidth: "113px",
             height: "140px"
           }} />
-        <div className="text-2xl">{title}</div>
-        <div className="text-base">{description}</div>
+        <div className="text-3xl">{title}</div>
+        <div className="text-lg">{description}</div>
       </div>
     </>
   );
