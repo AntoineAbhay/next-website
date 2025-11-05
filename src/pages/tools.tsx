@@ -85,7 +85,7 @@ const isHexaColor = (color: string) =>
 
 const parseRgbColor = (color: string) => {
   if (!color.toLowerCase().startsWith("rgb(") || !color.endsWith(")")) {
-    return '';
+    return "";
   }
   const colors = color
     .slice(4, -1)
@@ -95,9 +95,9 @@ const parseRgbColor = (color: string) => {
     colors.length !== 3 ||
     colors.some((value) => Number.isNaN(value) || value < 0 || value > 255)
   ) {
-    return '';
+    return "";
   }
-  return colors.map((value) => value.toString(16).padStart(2, '0')).join('')
+  return colors.map((value) => value.toString(16).padStart(2, "0")).join("");
 };
 
 const checkColor = (input: string) => {
@@ -141,7 +141,9 @@ const ColorConverter = () => {
   return (
     <div>
       <form className="rounded-md border border-indigo-900 border-opacity-20 p-4 dark:border-slate-400 dark:bg-slate-800">
-        <h3 className="mb-4 text-xl font-bold dark:text-slate-200">Color converter</h3>
+        <h3 className="mb-4 text-xl font-bold dark:text-slate-200">
+          Color converter
+        </h3>
         <div className="mb-4">
           <label className="text-sm" htmlFor={colorInputId}>
             Color

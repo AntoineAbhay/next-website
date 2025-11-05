@@ -5,9 +5,9 @@ import Chip from "./Chip";
 const RepositoryCard = ({ repository }: { repository: Repository }) => {
   const { name, html_url, description, languages, topics } = repository;
   return (
-    <div className="p-4 border border-indigo-900 border-opacity-20 rounded-md dark:bg-slate-800 dark:border-slate-400">
+    <div className="border-8 border-slate-900 bg-pink-200 p-8 shadow-[12px_12px_0px_0px_rgba(15,23,42,1)] dark:border-white dark:bg-pink-900">
       <a
-        className="text-2xl capitalize font-semibold dark:text-slate-200"
+        className="text-2xl font-semibold capitalize dark:text-white"
         href={html_url}
         target="_blank"
         rel="noopener noreferrer"
@@ -17,13 +17,13 @@ const RepositoryCard = ({ repository }: { repository: Repository }) => {
       {topics.map((topic) => (
         <span
           key={topic}
-          className="mr-2.5 mb-1 inline-block rounded bg-indigo-50 dark:bg-sky-900 py-1 px-2 text-sm font-medium text-indigo-900 dark:text-sky-200"
+          className="mr-2.5 mb-1 inline-block bg-yellow-200 py-1 px-2 text-sm font-medium text-indigo-900 dark:bg-cyan-900 dark:text-white"
         >
           {topic}
         </span>
       ))}
       <div>
-        <p className="text-lg font-sans py-2">{description}</p>
+        <p className="py-2 font-sans text-lg">{description}</p>
       </div>
       <div>
         {Object.keys(languages).map((name) => {
@@ -31,7 +31,6 @@ const RepositoryCard = ({ repository }: { repository: Repository }) => {
           return <Chip key={name} text={name} backgroundColor={color} />;
         })}
       </div>
-      
     </div>
   );
 };

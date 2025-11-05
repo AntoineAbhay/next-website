@@ -7,7 +7,7 @@ const Chip: React.FC<{
   <span className="mr-1.5 mb-1 inline-block rounded-2xl text-sm">
     <span
       style={{ backgroundColor }}
-      className="inline-block relative top-0.5 h-3 w-3 rounded-full mr-1"
+      className="relative top-0.5 mr-1 inline-block h-3 w-3 rounded-full"
     ></span>
     <span>{text}</span>
   </span>

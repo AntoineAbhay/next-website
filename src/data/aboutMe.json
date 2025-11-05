@@ -5,7 +5,7 @@
       "location": "Paris, France",
       "start": "February 2023",
       "end": "Today",
-      "companyLink": "https://hiresweet.com/",
+      "companyLink": "https://www.sowee.fr/",
       "icon": "hiresweetImage",
       "excerpt": "",
       "skills": [
@@ -38,7 +38,35 @@
       "end": "December 2022",
       "companyLink": "https://hiresweet.com/",
       "icon": "hiresweetImage",
-      "excerpt": "HireSweet's mission is to solve the problem of recruitment in the tech industry. We've been developing tools to help recruiters find the right candidates to fill their open positions.\n\nI joined the team at the end of my studies in engineering school. Since then I had the opportunity to work on many different projects.\n\nWe've developed a validation library for Python and Javascript where schemas are defined in JSON. As JSON schema was still a draft, we decided to develop our own.\nI worked on internal tools to boost the operation team productivity. One of the job was to manually validate whether or not a candidate was a good enough fit for a given position. The goal was to have unperceptible latency between two profiles. We managed to do so mainly by prefetching the data just in time.\nAs emails are the main way to contact candidates, it was necessary to have integrations with both Gmail and Outlook as they cover a majority of companies. Automation is also a key factor to help recruiters. That's why we built contact sequences that can be triggered automatically, sending emails, followups, reminders etc.\nJust to name a few other projects:\n - Tracking email open and click events\n - Resume file creation using a lambda function and puppeteer\n - Calendly integration using webhooks to receive appointments notifications\n - Many application tracking systems integrations.",
+      "excerpt": "Built tools to streamline tech recruitment, helping recruiters find and engage the right candidates efficiently.",
+      "keyProjects": [
+        {
+          "title": "Validation Library",
+          "description": "Developed a custom validation library for Python and JavaScript with JSON-defined schemas",
+          "impact": "Standardized data validation across the platform"
+        },
+        {
+          "title": "Internal Operations Tools",
+          "description": "Built candidate validation interface with imperceptible latency using just-in-time data prefetching",
+          "impact": "Dramatically improved operations team productivity"
+        },
+        {
+          "title": "Email Platform Integrations",
+          "description": "Integrated Gmail and Outlook APIs to enable seamless candidate outreach",
+          "impact": "Covered majority of recruiter workflows"
+        },
+        {
+          "title": "Automated Contact Sequences",
+          "description": "Built automation system for email campaigns with follow-ups and reminders",
+          "impact": "Reduced manual recruiter workload"
+        }
+      ],
+      "otherContributions": [
+        "Email tracking (opens and clicks)",
+        "Resume generation with AWS Lambda and Puppeteer",
+        "Calendly webhook integration for appointment notifications",
+        "Multiple ATS (Applicant Tracking System) integrations"
+      ],
       "skills": [
         {
           "text": "MongoDB",
@@ -81,7 +109,31 @@
       "end": "August 2018",
       "companyLink": "https://broadsign.com/ayuda/",
       "icon": "ayudaImage",
-      "excerpt": "Ayuda was a canadian company in the Out-of-Home (OOH) advertising industry with offices in Montreal, Berlin and Sydney. They were developing a software for static and digital advertising panels management.\n\nI worked there for 5 months in their Sydney downtown offices. I was mainly involved in the maintenance of the platform and client integration tasks such as customization of contracts and invoices. Working from Sydney was not ideal from a newcomer and technical perspective. The team there was divided in two offices and the most experienced developers of the company were at the other end of the planet. People at Ayuda were great though and I enjoyed working with them despite the difficulties.\n\nAyuda's stack was based on Microsoft SQL Server, C# and jQuery. It was my first experience with C# which is quite different from what I knew (Python and Javascript). I had to deal with types, object oriented programming and the .NET ecosystem. Honestly, I didn't like it much... maybe because I was not properly introduced and lacked time to ramp up my skills. I remember my fisrt task was about fixing an inexact value in a client's report. It implied debugging a thousand lines of sql stored procedure which was used in the generation of the report. I thought I had found the problem. My PR was accepted but reverted the next day because it created other problems for other clients. I felt self-disappointed at that moment. However this thaught me how important it is to be able to test this kind of logic. One of the difficulty at Ayuda was the client specific behaviours that were all around the place. Unfortunately no good solution was implemented at that time.\n\nOn the management side, I felt that the team needed more visibility of the backlog and current tasks status. I submitted the idea of having a board with all that data on the wall (what I had seen at Homerez). I think it facilitated the relationships with the project manager.",
+      "context": "International internship in a distributed team environment",
+      "excerpt": "Maintained and customized OOH (Out-of-Home) advertising panel management software for diverse clients.",
+      "keyProjects": [
+        {
+          "title": "Platform Maintenance & Client Integrations",
+          "description": "Customized contracts and invoices for client-specific requirements",
+          "impact": "Delivered tailored solutions for multiple advertising clients"
+        },
+        {
+          "title": "Report Bug Fixes",
+          "description": "Debugged complex SQL stored procedures (1000+ lines) for client reporting accuracy",
+          "impact": "Learned the critical importance of comprehensive testing for client-specific logic"
+        },
+        {
+          "title": "Team Process Improvement",
+          "description": "Proposed and implemented physical kanban board for backlog visibility",
+          "impact": "Improved team communication and project manager relationships"
+        }
+      ],
+      "keyLearnings": [
+        "First experience with statically-typed OOP (C#, .NET ecosystem)",
+        "Importance of testing client-specific business logic",
+        "Challenges of distributed teams across time zones",
+        "Value of visual project management tools"
+      ],
       "skills": [
         {
           "text": "SQL",
@@ -104,7 +156,27 @@
       "end": "February 2018",
       "companyLink": "https://www.homerez.fr/",
       "icon": "homerezImage",
-      "excerpt": "I worked at Homerez for 6 months. It was my first professional experience as a web developer.\n\nI learnt how to use AngularJS and NodeJS. That was also the first time I heard about MongoDB and I really enjoyed working with this database.\n\nWe were organized as a scrum team around the CTO (Antoine). As it was my first experience, scrum just felt natural. All the rituals were here for a good reason.\n\nI met great engineers: Tim, Tola and Zihoui! They had taught me pretty much everything I knew by the end of this internship.\n\nWe were developing different web apps to help homeowners rent their place on platforms such as Booking.com and Airbnb. We were in charge of syncing availabilities accross all platforms to maximize the occupation ratio. A big part of the job was to build tools that would help the operational teams: understanding their issues and help fix them. There was no product oriented people at the time in the team so we could get lost in translation sometimes. A perfect place to learn.",
+      "excerpt": "Built web applications to help homeowners manage vacation rental listings across multiple platforms like Airbnb and Booking.com.",
+      "keyProjects": [
+        {
+          "title": "Multi-Platform Availability Sync",
+          "description": "Developed synchronization system to keep rental availability updated across Airbnb, Booking.com, and other platforms",
+          "impact": "Maximized property occupation rates while preventing double-bookings"
+        },
+        {
+          "title": "Internal Operations Tools",
+          "description": "Built internal tools for operations team to handle dynamic pricing, guest bookings, and availability management.",
+          "impact": "Streamlined daily operations for sales and account management teams"
+        }
+      ],
+      "keyLearnings": [
+        "First professional web development experience",
+        "Learned modern JavaScript stack (AngularJS, Node.js, MongoDB)",
+        "Experienced Scrum methodology in practice",
+        "Importance of understanding end-user needs when building internal tools",
+        "Mentored by experienced engineers in a collaborative environment"
+      ],
+      "context": "First internship - Foundation of full-stack development skills",
       "skills": [
         {
           "text": "MongoDB",
